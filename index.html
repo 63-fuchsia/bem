@@ -5,6 +5,44 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <style>
+    .card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 0 20px 0 20px;
+    margin-top: 85px;
+  }
+
+.card__picture {
+  object-fit: cover;
+  block-size: 100%;
+  inline-size: 100%;
+  display: block;
+}
+
+.card-title {
+  grid-column: 1 / -1;
+}
+
+.sunset {
+  grid-column: 1 / span 2;
+  grid-row: 2;
+}
+
+.icecrem {
+  grid-row: 2 / span 2;
+}
+
+.tape {
+  grid-row: 3 / span 2;
+}
+
+.street {
+  grid-column: 2 / span 2;
+}
+
+  </style>
 </head>
 <body>
   <section class="card">
